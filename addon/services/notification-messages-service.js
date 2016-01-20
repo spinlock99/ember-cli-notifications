@@ -3,8 +3,8 @@ import Ember from 'ember';
 export default Ember.ArrayProxy.extend({
     content: Ember.A(),
 
-    defaultClearDuration: 3200,
-    defaultAutoClear: false,
+    defaultClearDuration: null,
+    defaultAutoClear: null,
 
     addNotification(options) {
         // If no message is set, throw an error
